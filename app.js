@@ -1,9 +1,15 @@
-import { hiking } from './data.js';
+import { getHikes } from './fetch-utils.js';
 import { renderHikes } from './utils.js';
 
 const hikesListEl = document.getElementById('hiking');
 
-for (let hikes of hiking) {
-    const hikingDiv = renderHikes(hikes);
-    hikesListEl.append(hikingDiv);
+async function loadData() {
+    const hikes = await getHikes();
+
+    for (let hike of hikes) {
+        const hikingDiv = renderHikes(hike);
+        hikesListEl.append(hikingDiv);
+
+    }
 }
+loadData();

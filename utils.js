@@ -6,7 +6,7 @@ export function renderHikes(hikes) {
     h1.textContent = hikes.hike;
 
     const img = document.createElement('img');
-    img.src = hikes.image;
+    img.src = `./assets/${hikes.hike}.png`;
 
     const p = document.createElement('p');
     p.textContent = `${hikes.hike} is located near ${hikes.location} and is best known for ${hikes.knownFor}`;

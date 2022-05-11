@@ -16,7 +16,7 @@ export const hiking = [
     { 
         id: '3',
         hike: 'Tamolitch Falls (Blue Pool)', 
-        location: 'McKenzie River', 
+        location: 'McKenzie River, Oregon', 
         knownFor: 'pristine turquoise blue water', 
         image: './assets/Blue Pool.png' 
     },
