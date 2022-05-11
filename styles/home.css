@@ -1,31 +1,39 @@
-p {
-    font-family: fantasy;
-    text-align: center;
-}
 h1 {
     font-family: fantasy;
     font-size: 2rem;
     font-weight: bolder;
 }
 .hiking-spots img {
-    float: left;
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    justify-content: center;
     object-fit: cover;
+    border: 4px solid black;
     border-radius: 25%;
+    margin: 10px;
 }
 .hiking-spots {
-    width: 30%;
     display:flex;
     flex-direction: column;
     align-items: center;
-    border: 10px solid black;
+    /* border: 10px solid black;
     padding: 15px;
     margin: 15px;
     border-radius: 25%;
-    background-color:cornsilk;
+    background-color:cornsilk; */
 }
 #hiking {
     display:flex;
     flex-direction: row;
+}
+
+.hike {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
 }
