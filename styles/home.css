@@ -1,1 +1,31 @@
-/* add home page styles here */
+p {
+    font-family: fantasy;
+    text-align: center;
+}
+h1 {
+    font-family: fantasy;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.hiking-spots img {
+    float: left;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25%;
+}
+.hiking-spots {
+    width: 30%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid black;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 25%;
+    background-color:cornsilk;
+}
+#hiking {
+    display:flex;
+    flex-direction: row;
+}

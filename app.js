@@ -1,8 +1,9 @@
-// import functions and grab DOM elements
+import { hiking } from './data.js';
+import { renderHikes } from './utils.js';
 
-// let state
+const hikesListEl = document.getElementById('hiking');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+for (let hikes of hiking) {
+    const hikingDiv = renderHikes(hikes);
+    hikesListEl.append(hikingDiv);
+}
