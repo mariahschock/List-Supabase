@@ -1,8 +1,15 @@
-// import functions and grab DOM elements
+import { getHikes } from './fetch-utils.js';
+import { renderHikes } from './utils.js';
 
-// let state
+const hikesListEl = document.getElementById('hiking');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+async function loadData() {
+    const hikes = await getHikes();
+
+    for (let hike of hikes) {
+        const hikingDiv = renderHikes(hike);
+        hikesListEl.append(hikingDiv);
+
+    }
+}
+loadData();
